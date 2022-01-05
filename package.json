@@ -4,6 +4,7 @@
   "private": true,
   "description": "nicolaspaillard",
   "author": "nicolas paillard",
+  "homepage": "https://nicolaspaillard.github.io",
   "keywords": [
     "gatsby"
   ],
@@ -12,11 +13,16 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "gatsby": "^4.4.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
