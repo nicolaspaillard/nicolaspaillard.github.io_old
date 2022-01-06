@@ -1,4 +1,4 @@
-nav{
+#nav-bar{
     position: fixed;
     display: flex;
     justify-content: center;
@@ -7,9 +7,10 @@ nav{
     width: 100%;
     height: 3em;
     background-color: var(--lightblack);
-    overflow: hidden;
+    overflow: visible;
+    z-index: 1000;
 }  
-nav a {
+#nav-bar a{
     float: left;
     display: block;
     padding: 0.5em 1em;
@@ -17,42 +18,49 @@ nav a {
     text-align: center;
     text-decoration: none;
     font-size: 1em;
-    border-radius: 5px;
 }  
-nav a svg{
+#nav-bar a svg{
     color: var(--cyan);
 }
-nav a:hover {
+#nav-bar a:hover{
     background-color: rgba(0,0,0,0.2);
+    border-radius: 5px;
 }
-nav .icon {
+#nav-bar .icon{
     display: none;
 }
 
 /* Responsive positionning */
-@media screen and (max-width: 600px) {
-    nav{
+@media screen and (max-width: 600px){
+    #nav-bar{
         display: block;
     }
-    nav a:not(:first-child) {
+    #nav-bar a:not(:first-child){
         display: none;
     }
-    nav a.icon {
+    #nav-bar a.icon{
         float: right;
         display: block;
     }
 }
 
-/* Responsive positionning on menu show */
-@media screen and (max-width: 600px) {
-    nav.expanded .icon {
+/* Responsive positionning on #na  vbar expand */
+@media screen and (max-width: 600px){
+    #nav-bar.toggled{
+        background-color: var(--lightblack);
+    }
+    #nav-bar.toggled .icon{
         position: absolute;
         right: 0;
         top: 0;
     }
-    nav.expanded a {
+    #nav-bar.toggled a{
         float: none;
         display: block;
         text-align: left;
+        margin: 0;
+        /* margins disabled then added to padding */
+        padding: calc(0.5em + 5px) calc(1em + 5px);
+        background-color: var(--lightblack);
     }
 }

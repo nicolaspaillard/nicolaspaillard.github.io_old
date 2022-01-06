@@ -1,6 +1,6 @@
 import * as React from 'react'
 export default function Contact() {
     return (
-        <section>azeazeaz</section>
+        <section id='contact'>azeazeaz</section>
       );
   }

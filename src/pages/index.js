@@ -4,10 +4,10 @@ import * as React from 'react'
 import './styles.css'
 // Components
 import NavBar from '../components/NavBar/NavBar'
-import AboutMe from '../components/AboutMe'
-import Skills from '../components/Skills'
-import Experience from '../components/Eperience'
-import Contact from '../components/Contact'
+import AboutMe from '../components/AboutMe/AboutMe'
+import Skills from '../components/Skills/Skills'
+import Experience from '../components/Experience/Experience'
+import Contact from '../components/Contact/Contact'
 import Home from '../components/Home/Home'
 
 
@@ -20,7 +20,7 @@ const IndexPage = () => {
       <Home id="home" />
       <AboutMe id="about" />
       <Skills id="skills" />
-      <Experience id="experiences" />
+      <Experience id="experience" />
       <Contact id="contact"/>
     </main>
   )

@@ -20,7 +20,9 @@ a:visited{
 	color: white;
 }
 section{
-	width: 100%;
 	border-bottom: 3px solid var(--darkcyan);
+	padding-left: 1em;
+	/* temporary */
+	height: 800px;
 }
 /* Global styles */
