@@ -1,20 +1,36 @@
 #home{
     padding-top: 3em;
-    height: calc(100vh - 3em - 3px);
+    /* 3em : navbar, 3px : section border-bottom, 4em ????*/
+    height: calc(calc(100vh - 4em) - 3px);
     background: top center;
     background-size: cover;
     background-image: url('../../images/home-background.jpg');
-}
-
-#me *{
-    display: inline-block;
-    margin: 0 auto;
-    margin-bottom: 5px;
+    border-bottom: 3px solid var(--darkcyan);
 }
 
 #me{
     position: relative;
     display: inline-block;
-    top: 50%;
     left: 40%;
+    top: 50%;
+}
+
+#me > *{
+    display: inline-block;
+    font-weight: normal;
+}
+#me h1::after{
+    content: none;
+}
+#me h4 i span span:first-child{
+    color:var(--cyan);
+    border-bottom: 2px solid var(--cyan);
+}
+
+/* Responsive positionning */
+@media screen and (max-width: 600px){
+    #me{
+        left:0;
+        top: 40%;
+    }
 }

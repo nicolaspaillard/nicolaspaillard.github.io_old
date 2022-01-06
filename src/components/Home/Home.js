@@ -6,8 +6,8 @@ export default function Home() {
     return (
         <section id='home'>
             <div id="me">
-            <h1>Nicolas PAILLARD</h1><br/>
-            Développeur&nbsp;<Typed strings={['C#','.NET','Backend','Full Stack']} typeSpeed={80} backDelay={1000} backSpeed={50} loop shuffle />
+                <h1>Nicolas PAILLARD</h1><br/>
+                <h4><i>Développeur&nbsp;<Typed strings={['C#','.NET','Backend','Full Stack','Java']} typeSpeed={80} backDelay={1000} backSpeed={50} loop shuffle /></i></h4>
             </div>
         </section>
     )
