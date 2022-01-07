@@ -1,47 +1,51 @@
 #nav-bar{
     position: fixed;
-    display: flex;
+    display:  flex;
     justify-content: center;
-    top:0;
-    left:0;
-    width: 100%;
+    align-items: center;
+    width: calc(100vw - 2em);
     height: 3em;
     background-color: var(--lightblack);
     z-index: 1000;
+    padding-left: 1em;
+    padding-right: 1em;
 }  
-#nav-toggle, .nav-link{
-    float: left;
-    display: block;
-    padding: 0.5em 1em;
-    margin: 0.3em;
-    text-align: center;
+#nav-links{
+    display: flex;
     font-size: 1em;
+    background-color: var(--lightblack);
 }
-#nav-toggle svg, .nav-link svg{
-    color: var(--cyan);
+.nav-link{
+    height: 1em;
+    display: flex;
 }
 #nav-toggle{
-    display: none !important;
+    display: none;
+}
+.nav-link, #nav-toggle{
     cursor: pointer;
+    align-items: center;
+    padding: 0.5em;
+}
+
+#nav-toggle svg, .nav-link svg{
+    color: var(--cyan);
 }
 .nav-link:hover{
     background-color: rgba(255,255,255,0.2);
     border-radius: 0.3em;
 }
+
+
 /* Responsive positionning */
 @media screen and (max-width: 700px){
-    #nav-bar{
-        display: block;
-    }
-    .nav-link:not(:first-child){
+    #nav-links{
         display: none;
     }
     #nav-toggle{
-        float: right !important;
-        display: block !important;
-    }
-    .nav-link:hover{
-        border-radius: 0;
+        margin-left: auto;
+        display: flex !important;
+        z-index: 1001;
     }
 }
 /* Responsive positionning on #navbar expand */
@@ -49,18 +53,20 @@
     #nav-bar.toggled{
         background-color: var(--lightblack);
     }
-    #nav-bar.toggled #nav-toggle{
-        position: absolute;
-        right: 0;
-        top: 0;
+    #nav-bar.toggled #nav-links{
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 2em);
+        position: inherit;
+        top: 3em;
+        padding-left: 1em;
+        padding-right: 1em;
     }
     #nav-bar.toggled .nav-link{
-        float: none;
-        display: block;
-        text-align: left;
-        margin: 0;
-        /* margins disabled then added to padding */
-        padding: 0.8em 1.3em;
-        background-color: var(--lightblack);
+        justify-content: left;
+        height: 1em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        width: fit-content;
     }
 }
