@@ -13,12 +13,14 @@ export default function NavBar() {
   return (
     <nav id='nav-bar'>
       <Link to='#home' class='nav-link'><FontAwesomeIcon icon={faHome} />&nbsp;&nbsp;Accueil</Link>
-      <Link to='#aboutme' class='nav-link'><FontAwesomeIcon icon={faAddressCard} />&nbsp;&nbsp;À propos</Link>
-      <Link to='#skills' class='nav-link'><FontAwesomeIcon icon={faBriefcase} />&nbsp;&nbsp;Compétences</Link>
-      <Link to='#experience' class='nav-link'><FontAwesomeIcon icon={faBuilding} />&nbsp;&nbsp;Expériences</Link>
-      <Link to='#contact' class='nav-link'><FontAwesomeIcon icon={faEnvelope} />&nbsp;&nbsp;Contact</Link>
+      <div id='nav-links'>
+        <Link to='#aboutme' class='nav-link'><FontAwesomeIcon icon={faAddressCard} />&nbsp;&nbsp;À propos</Link>
+        <Link to='#skills' class='nav-link'><FontAwesomeIcon icon={faBriefcase} />&nbsp;&nbsp;Compétences</Link>
+        <Link to='#experience' class='nav-link'><FontAwesomeIcon icon={faBuilding} />&nbsp;&nbsp;Expériences</Link>
+        <Link to='#contact' class='nav-link'><FontAwesomeIcon icon={faEnvelope} />&nbsp;&nbsp;Contact</Link>
+      </div>
       <a id='nav-toggle'>
-        <FontAwesomeIcon icon={faBars} />
+          <FontAwesomeIcon icon={faBars} />
       </a>
     </nav>
   )

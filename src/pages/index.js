@@ -11,6 +11,7 @@ import Contact from '../components/Contact/Contact'
 import Home from '../components/Home/Home'
 
 
+
 // Step 2: Define your component
 const IndexPage = () => {
   return (
