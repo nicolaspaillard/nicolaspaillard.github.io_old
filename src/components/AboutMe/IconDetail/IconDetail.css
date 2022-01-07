@@ -5,6 +5,14 @@
     align-items: center;
     width: 80%;
 }
+.icon-detail .icon-container{
+    margin-right: 0.5em;
+}
 .icon-detail:not(:nth-child(1)){
-    margin-top: 1em;
+    margin-top: 0.5em;
+}
+@media screen and (max-width: 700px){
+    .icon-detail{
+        width: 50%;
+    }
 }

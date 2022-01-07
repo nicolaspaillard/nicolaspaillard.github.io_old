@@ -6,7 +6,7 @@ export default function IconDetail(props) {
     return (
         <a class='icon-detail' href={props.href}>
             <Icon icon={props.icon}/>
-            <a>&nbsp;{props.text}</a>
+            <a>{props.text}</a>
         </a>
     )
 }

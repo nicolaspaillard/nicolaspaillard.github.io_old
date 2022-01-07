@@ -23,6 +23,13 @@ section{
 .container-flex{
     display: inline-flex;
     justify-content: center;
+	width: 100%;
+}
+.split-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
 }
 section .container {
 	width: 60%;
@@ -34,6 +41,15 @@ section .container {
 @media screen and (max-width: 700px){
 	section .container {
 		width: 90%;
+	}
+	.container-flex{
+		flex-direction: column;
+	}
+	.split-container{
+		width: 100%;
+	}
+	.split-container:nth-child(2){
+		margin-top: 0.5em;
 	}
 }
 /* Text formatting */

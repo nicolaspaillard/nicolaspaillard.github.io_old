@@ -12,7 +12,7 @@ export default function AboutMe() {
     return (
       <section id='aboutme'>
         <div class='container'>
-          <h1>À propos</h1><br/><br/>
+          <h1>À propos</h1><br/>
           <div id='profile'>
             <div class='panel'>
               <img id='avatar' src={avatar} />
@@ -24,8 +24,8 @@ export default function AboutMe() {
             </div>
             <div class='panel'>
               <p>
-                <h2>Mon parcours</h2>
-                Passionné d'informatique depuis l'enfance, j'ai commencé très jeune à assembler des ordinateurs
+                <h2>Mon parcours</h2><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;Passionné d'informatique depuis l'enfance, j'ai commencé très jeune à assembler des ordinateurs
                 puis à m'intéresser à tous types de nouvelles technologies comme les drones ou encore les smartphones (android).
                 Après avoir effectué un baccalauréat technonlogique (STI2D), je m'oriente donc naturellement
                 vers le développement et le réseau en rejoignant la filière Systèmes numériques en BTS,
@@ -33,12 +33,12 @@ export default function AboutMe() {
                 l'un pour les études, l'autre pour le plaisir, faisant un premier pas vers la programmation.
               </p>
               <div class='container-flex'>
-              <div class='icon-details'>
-                <IconDetail icon={faGraduationCap} text={'BTS Systèmes Numériques'}/>
+              <div class='split-container'>
                 <IconDetail icon={faSearch} text={'Recherche CDI'}/>
                 <IconDetail icon={faCar} text={'Mobile en Occitanie'}/>                
+                <IconDetail icon={faGraduationCap} text={'BTS Systèmes Numériques'}/>
               </div>
-              <div class='icon-details'>
+              <div class='split-container'>
                 <IconDetail icon={faBirthdayCake} text={getAge('1997-05-11') + ' ans'}/>
                 <IconDetail icon={faMapMarker} text={'Montpellier, France'}/>
                 <IconDetail icon={faEnvelope} text={'Contacter par mail'} href={'mailto:paillard.nicolas.pro@gmail.com'}/>
@@ -48,7 +48,8 @@ export default function AboutMe() {
               <p>
                 A la suite de ce BTS, j'ai fait la découverte de C# et du framework .NET, que j'ai d'abord expérimentés seul sur
                 divers projets pour en comprendre les bases. Ce langage ayant éveillé ma curiosité, j'ai ensuite voulu parfaire mes connaissances,
-                m'inscrivant en formation C# pour une durée de 3 mois.
+                m'inscrivant chez Diginamic en formation C# pour une durée de 3 mois.
+                <br/>CE TEXTE EST DESTINE A ETRE MODIFIE, LOREM IPSUM ? IPSUM LOREM 
               </p>
             </div>
           </div>
