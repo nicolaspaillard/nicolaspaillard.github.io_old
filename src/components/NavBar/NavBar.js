@@ -17,7 +17,7 @@ export default function NavBar() {
       <Link to='#skills' class='nav-link'><FontAwesomeIcon icon={faBriefcase} />&nbsp;&nbsp;Compétences</Link>
       <Link to='#experience' class='nav-link'><FontAwesomeIcon icon={faBuilding} />&nbsp;&nbsp;Expériences</Link>
       <Link to='#contact' class='nav-link'><FontAwesomeIcon icon={faEnvelope} />&nbsp;&nbsp;Contact</Link>
-      <a id='nav-toggle' class="icon">
+      <a id='nav-toggle'>
         <FontAwesomeIcon icon={faBars} />
       </a>
     </nav>

@@ -7,14 +7,12 @@
     background-image: url('../../images/home-background.jpg');
     border-bottom: 3px solid var(--darkcyan);
 }
-
 #me{
     position: relative;
     display: inline-block;
     left: 40%;
     top: 50%;
 }
-
 #me > *{
     display: inline-block;
     font-weight: normal;
@@ -26,9 +24,8 @@
     color:var(--cyan);
     border-bottom: 2px solid var(--cyan);
 }
-
 /* Responsive positionning */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
     #me{
         left:0;
         top: 40%;
