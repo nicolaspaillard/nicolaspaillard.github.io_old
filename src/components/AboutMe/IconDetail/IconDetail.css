@@ -1,0 +1,10 @@
+.icon-detail{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 80%;
+}
+.icon-detail:not(:nth-child(1)){
+    margin-top: 1em;
+}

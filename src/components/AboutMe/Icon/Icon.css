@@ -1,0 +1,14 @@
+.icon-container{
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--darkcyan);
+    width: 3em;
+    height: 3em;
+}
+.icon-container svg{
+    height: 2em !important;
+    width: 2em !important;
+}

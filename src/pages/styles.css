@@ -20,8 +20,16 @@ section{
 .container{
 	margin: 0 auto;
 }
+.container-flex{
+    display: inline-flex;
+    justify-content: center;
+}
 section .container {
-	width: 50%;
+	width: 60%;
+	/* debugging 
+	border-left: 1px solid red;
+	border-right: 1px solid red;
+	*/
 }
 @media screen and (max-width: 700px){
 	section .container {
