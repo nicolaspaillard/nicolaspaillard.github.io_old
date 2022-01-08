@@ -13,8 +13,8 @@ export default function AboutMe() {
       <section id='aboutme'>
         <div class='container'>
           <h1>À propos</h1><br/>
-          <div id='profile'>
-            <div class='panel'>
+          <div class='container-flex main'>
+            <div class='split-container w30'>
               <img id='avatar' src={avatar} />
               <div id='social-links'>
                 <Icon icon={faLinkedin}  href={'https://www.linkedin.com/in/nicolas--p/'}/>
@@ -22,7 +22,7 @@ export default function AboutMe() {
                 <Icon icon={faGithub}  href={'https://github.com/nicolaspaillard/'}/>
               </div>
             </div>
-            <div class='panel'>
+            <div class='split-container w70'>
               <p>
                 <h2>Mon parcours</h2><br/>
                 &nbsp;&nbsp;&nbsp;&nbsp;Passionné d'informatique depuis l'enfance, j'ai commencé très jeune à assembler des ordinateurs
@@ -33,12 +33,12 @@ export default function AboutMe() {
                 l'un pour les études, l'autre pour le plaisir, faisant un premier pas vers la programmation.
               </p>
               <div class='container-flex'>
-              <div class='split-container'>
+              <div class='split-container w50'>
                 <IconDetail icon={faSearch} text={'Recherche CDI'}/>
                 <IconDetail icon={faCar} text={'Mobile en Occitanie'}/>                
                 <IconDetail icon={faGraduationCap} text={'BTS Systèmes Numériques'}/>
               </div>
-              <div class='split-container'>
+              <div class='split-container w50'>
                 <IconDetail icon={faBirthdayCake} text={getAge('1997-05-11') + ' ans'}/>
                 <IconDetail icon={faMapMarker} text={'Montpellier, France'}/>
                 <IconDetail icon={faEnvelope} text={'Contacter par mail'} href={'mailto:paillard.nicolas.pro@gmail.com'}/>

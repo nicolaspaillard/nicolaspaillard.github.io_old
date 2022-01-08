@@ -1,22 +1,7 @@
-#profile{
-    display: flex;
-    flex-direction: row;
-}
-.panel{
-    display: flex;
-    flex-direction: column;
-}
-.panel:nth-child(1){
-    justify-content: center;
-    align-items: center;
-}
-.panel:nth-child(2){
-    padding-left: 3em;
-}
 #avatar{
     border-radius: 50%;
     height: auto;
-    max-width: 20em;
+    width: 100%;
 }
 #social-links{
     width: 100%;
@@ -24,21 +9,6 @@
     justify-content: center;
     margin-top: 1em;
 }
-
-
-.icon-details{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-}
-
-
-@media screen and (max-width: 1250px){
-    #profile{
-        flex-direction: column;
-    }
-    .panel:nth-child(2){
-        padding-left: 0;
-    }
+#aboutme > .container > .container-flex > .split-container:last-child{
+    padding-left: 2em;
 }

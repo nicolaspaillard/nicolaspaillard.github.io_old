@@ -4,20 +4,22 @@ import jQuery from 'jquery'
 import { Link } from 'gatsby'
 import './NavBar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faHome, faBriefcase, faEnvelope, faAddressCard, faBuilding } from '@fortawesome/fontawesome-free-solid';
+import { faBars, faHome} from '@fortawesome/fontawesome-free-solid';
 
 // Check if window is defined (so if in the browser or in node.js).
 
 
-export default function NavBar() {
+export default function NavBar(props) {
+  var pages = props.pages;
+  const linkslist = pages.map((page) =>
+    <Link to={page.href} class='nav-link'><FontAwesomeIcon icon={page.icon} />&nbsp;&nbsp;{page.name}</Link>
+  );
+
   return (
     <nav id='nav-bar'>
       <Link to='#home' class='nav-link'><FontAwesomeIcon icon={faHome} />&nbsp;&nbsp;Accueil</Link>
       <div id='nav-links'>
-        <Link to='#aboutme' class='nav-link'><FontAwesomeIcon icon={faAddressCard} />&nbsp;&nbsp;À propos</Link>
-        <Link to='#skills' class='nav-link'><FontAwesomeIcon icon={faBriefcase} />&nbsp;&nbsp;Compétences</Link>
-        <Link to='#experience' class='nav-link'><FontAwesomeIcon icon={faBuilding} />&nbsp;&nbsp;Expériences</Link>
-        <Link to='#contact' class='nav-link'><FontAwesomeIcon icon={faEnvelope} />&nbsp;&nbsp;Contact</Link>
+        {linkslist}
       </div>
       <a id='nav-toggle'>
           <FontAwesomeIcon icon={faBars} />

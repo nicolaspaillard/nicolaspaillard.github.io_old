@@ -1,9 +1,9 @@
 import * as React from 'react'
-export default function Contact() {
+export default function Projects() {
     return (
-        <section id='contact'>
+        <section id='projects'>
           <div class='container'>
-            <h1>A propos</h1>
+            <h1>Projets</h1>
           </div>        
         </section>
       );
