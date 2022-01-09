@@ -1,6 +1,7 @@
 import * as React from 'react'
-import './Skills.css'
 import SkillsList from './SkillsList/SkillsList';
+import ContainerSplit from '../Containers/ContainerSplit/ContainerSplit'
+import ContainerFlex from '../Containers/ContainerFlex/ContainerFlex';
 
 export default function Skills() {
 
@@ -15,29 +16,31 @@ export default function Skills() {
     {name:'React', level:'70'},
     {name:'HTML/CSS', level:'90'},
     {name:'ASP.NET', level:'80'},
+    {name:'Responsive Design', level:'80'},
+    {name:'JavaScript', level:'70'},
   ];
 
   return (
     <section id='skills'>
       <div class='container'>
-        <h1>Compétences</h1><br/>
-        <div class='container-flex main'>
-          <div class='split-container w20'>
-            <p>lorem ipsum dolor sit amet</p>
-          </div>
-          <div class='split-container w80'>
-            <div class='container-flex'>
-              <div class='split-container w50'>
-                <h2>Backend</h2>
-                <SkillsList skills={backend}/>
+        <h1>Compétences</h1><br/><br/>
+          <ContainerFlex class={'main'}>
+            <ContainerSplit width={20}>
+              <p>lorem ipsum dolor sit amet</p>
+            </ContainerSplit>
+            <ContainerSplit width={80}>
+              <div class='container-flex'>
+                <ContainerSplit width={50}>
+                  <h2>Backend</h2>
+                  <SkillsList skills={backend}/>
+                </ContainerSplit>
+                <ContainerSplit width={50}>
+                  <h2 class='mtqs1'>Frontend</h2>
+                  <SkillsList skills={frontend}/>
+                </ContainerSplit>
               </div>
-              <div class='split-container w50'>
-                <h2>Frontend</h2>
-                <SkillsList skills={frontend}/>
-              </div>
-            </div>
-          </div>
-        </div>
+            </ContainerSplit>
+          </ContainerFlex>
       </div>    
     </section>
   );

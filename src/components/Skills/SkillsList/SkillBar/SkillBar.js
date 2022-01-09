@@ -2,8 +2,6 @@ import * as React from 'react'
 import './SkillBar.css'
 
 export default function SkillBar(props) {
-    var className = 'skill-level ';
-    className += 'w'+props.level;
     return (
         <div class='skill'>
             <div class='skill-text'>
@@ -11,7 +9,7 @@ export default function SkillBar(props) {
                 <a class='skill-width'>{props.level}%</a>
             </div>
             <span class='skill-bar'>
-                <span class={className}></span>
+                <span class='skill-level' style={{width:props.level+'%'}}></span>
             </span>
         </div>
     )

@@ -1,0 +1,25 @@
+.project-card{
+    border: 1px solid var(--lightblack);
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin: 0.5em;
+    text-align: center;
+
+}
+.project-link{
+    float: left;
+    width: 25%;
+}
+.project-name{
+    padding: 1em;
+}
+.project-img{
+    width: 100%;
+    border-radius: 0.5em;
+}
+
+@media screen and (max-width: 1250px){
+    .project-link{
+        width: 50%;
+    }
+}
