@@ -1,6 +1,6 @@
 import * as React from 'react'
-import ContainerSplit from '../Containers/ContainerSplit/ContainerSplit';
-import ContainerFlex from '../Containers/ContainerFlex/ContainerFlex';
+import ContainerSplit from '../../Containers/ContainerSplit/ContainerSplit';
+import ContainerFlex from '../../Containers/ContainerFlex/ContainerFlex';
 import TimeLine from './TimeLine/TimeLine';
 export default function Experience() {
   var formations = 

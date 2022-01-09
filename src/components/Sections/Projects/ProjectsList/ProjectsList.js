@@ -1,6 +1,6 @@
 import * as React from 'react'
 import ProjectCard from './ProjectCard/ProjectCard';
-import ContainerFlex from '../../Containers/ContainerFlex/ContainerFlex';
+import ContainerFlex from '../../../Containers/ContainerFlex/ContainerFlex';
 
 export default function ProjectsList(props) {
     var projects = props.projects;

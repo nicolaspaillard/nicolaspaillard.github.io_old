@@ -4,11 +4,11 @@ import * as React from 'react'
 import './styles.css'
 // Components
 import NavBar from '../components/NavBar/NavBar'
-import AboutMe from '../components/AboutMe/AboutMe'
-import Skills from '../components/Skills/Skills'
-import Experience from '../components/Experience/Experience'
-import Home from '../components/Home/Home'
-import Projects from '../components/Projects/Projects'
+import Home from '../components/Sections/Home/Home'
+import AboutMe from '../components/Sections/AboutMe/AboutMe'
+import Skills from '../components/Sections/Skills/Skills'
+import Experience from '../components/Sections/Experience/Experience'
+import Projects from '../components/Sections/Projects/Projects'
 
 import { faBriefcase, faAddressCard, faBuilding, faFileCode } from '@fortawesome/fontawesome-free-solid';
 

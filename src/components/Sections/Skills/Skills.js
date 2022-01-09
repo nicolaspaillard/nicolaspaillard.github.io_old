@@ -1,7 +1,7 @@
 import * as React from 'react'
 import SkillsList from './SkillsList/SkillsList';
-import ContainerSplit from '../Containers/ContainerSplit/ContainerSplit'
-import ContainerFlex from '../Containers/ContainerFlex/ContainerFlex';
+import ContainerSplit from '../../Containers/ContainerSplit/ContainerSplit'
+import ContainerFlex from '../../Containers/ContainerFlex/ContainerFlex';
 
 export default function Skills() {
 

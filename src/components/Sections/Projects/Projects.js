@@ -1,9 +1,7 @@
 import * as React from 'react'
 import ProjectsList from './ProjectsList/ProjectsList';
-import ContainerFlex from '../../components/Containers/ContainerFlex/ContainerFlex'
 
-
-import previousSite from '../../images/previousSite.png'
+import previousSite from '../../../images/previousSite.png'
 
 export default function Projects() {
     var projects = [

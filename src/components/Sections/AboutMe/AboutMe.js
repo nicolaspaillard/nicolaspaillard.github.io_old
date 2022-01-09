@@ -1,10 +1,10 @@
 import * as React from 'react'
-import avatar from '../../images/profile.jpg'
+import avatar from '../../../images/profile.jpg'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faBirthdayCake, faCar, faEnvelope, faGraduationCap, faMapMarker, faSearch,  } from '@fortawesome/fontawesome-free-solid';
 import Icon from './Icon/Icon';
-import ContainerFlex from '../Containers/ContainerFlex/ContainerFlex';
-import ContainerSplit from '../Containers/ContainerSplit/ContainerSplit';
+import ContainerFlex from '../../Containers/ContainerFlex/ContainerFlex';
+import ContainerSplit from '../../Containers/ContainerSplit/ContainerSplit';
 
 export default function AboutMe() {
     var diff = new Date() - new Date(1997,4,11);
