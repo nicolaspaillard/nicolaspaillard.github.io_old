@@ -10,8 +10,8 @@
 }
 .icon-background{
     display: flex;
-    flex-shrink: 0;
     justify-content: center;
+    flex-shrink: 0;
     align-items: center;
     border-radius: 50%;
     background-color: var(--darkcyan);
@@ -22,8 +22,6 @@
     height: 2em !important;
     width: 2em !important;
 }
-
-
 @media screen and (max-width: 700px){
     .icon-detail{
         width: 90%;
