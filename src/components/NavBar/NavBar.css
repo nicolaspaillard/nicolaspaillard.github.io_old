@@ -28,7 +28,7 @@
     padding: 0.5em;
 }
 #nav-toggle svg path, .nav-link svg path{
-    color: var(--cyan);
+    color: var(--cyan) !important;
 }
 .nav-link:hover{
     background-color: rgba(255,255,255,0.2);

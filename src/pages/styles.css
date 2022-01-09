@@ -19,7 +19,7 @@ html, body{
 	font-family: 'Roboto Thin',"Helvetica Neue",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 *{
-	color: var(--white);	
+	color: var(--white) !important;	
     text-decoration: none;
 }
 section{
