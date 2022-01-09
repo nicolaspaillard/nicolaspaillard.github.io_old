@@ -1,4 +1,14 @@
-.icon-container{
+.icon-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 80%;
+}
+.icon-box:not(:nth-child(1)){
+    margin-top: 0.5em;
+}
+.icon-background{
     display: flex;
     flex-shrink: 0;
     justify-content: center;
@@ -8,7 +18,14 @@
     width: 3em;
     height: 3em;
 }
-.icon-container svg{
+.icon-background svg{
     height: 2em !important;
     width: 2em !important;
+}
+
+
+@media screen and (max-width: 700px){
+    .icon-detail{
+        width: 90%;
+    }
 }

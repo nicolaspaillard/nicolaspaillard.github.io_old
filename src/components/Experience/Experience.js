@@ -34,7 +34,7 @@ export default function Experience() {
             <ContainerSplit width={20}>
               <p>lorem ipsum dolor sit amet</p>
               </ContainerSplit>
-          </ContainerFlex>
+          </ContainerFlex>   
       </div>    
     </section>
   );

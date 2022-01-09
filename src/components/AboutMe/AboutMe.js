@@ -3,7 +3,6 @@ import avatar from '../../images/profile.jpg'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faBirthdayCake, faCar, faEnvelope, faGraduationCap, faMapMarker, faSearch,  } from '@fortawesome/fontawesome-free-solid';
 import Icon from './Icon/Icon';
-import IconDetail from './IconDetail/IconDetail';
 import ContainerFlex from '../Containers/ContainerFlex/ContainerFlex';
 import ContainerSplit from '../Containers/ContainerSplit/ContainerSplit';
 
@@ -13,6 +12,7 @@ export default function AboutMe() {
     return (
       <section id='aboutme'>
         <div class='container'>
+
           <h1>À propos</h1><br/><br/>
           <ContainerFlex class={'main'}>
             <ContainerSplit width={30}>
@@ -33,17 +33,17 @@ export default function AboutMe() {
                 l'un pour les études, l'autre pour le plaisir, faisant un premier pas vers la programmation.</p>
                 <ContainerFlex>
                   <ContainerSplit width={50}>
-                    <IconDetail icon={faSearch} text={'Recherche CDI'}/>
-                    <IconDetail icon={faCar} text={'Mobile en Occitanie'}/>                
-                    <IconDetail icon={faGraduationCap} text={'BTS Systèmes Numériques'}/>
+                    <Icon icon={faSearch} text={'Recherche CDI'} />
+                    <Icon icon={faCar} text={'Mobile en Occitanie'} />            
+                    <Icon icon={faGraduationCap} text={'BTS Systèmes Numériques'} />
                   </ContainerSplit>
                   <ContainerSplit width={50} class='margin-top-05-query-small'>
-                    <IconDetail icon={faBirthdayCake} text={getAge('1997-05-11') + ' ans'}/>
-                    <IconDetail icon={faMapMarker} text={'Montpellier, France'}/>
-                    <IconDetail icon={faEnvelope} text={'Contacter par mail'} href={'mailto:paillard.nicolas.pro@gmail.com'}/>
+                    <Icon icon={faBirthdayCake} text={getAge('1997-05-11') + ' ans'} />
+                    <Icon icon={faMapMarker} text={'Montpellier, France'} />
+                    <Icon icon={faEnvelope} text={'Contacter par mail'} href={'mailto:paillard.nicolas.pro@gmail.com'} />
                   </ContainerSplit>
                 </ContainerFlex>           
-              <p class='mb0'>
+              <p class='margin-bottom-0'>
                 A la suite de ce BTS, j'ai fait la découverte de C# et du framework .NET, que j'ai d'abord expérimentés seul sur
                 divers projets pour en comprendre les bases. Ce langage ayant éveillé ma curiosité, j'ai ensuite voulu parfaire mes connaissances,
                 m'inscrivant chez Diginamic en formation C# pour une durée de 3 mois.
