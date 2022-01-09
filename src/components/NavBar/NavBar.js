@@ -33,6 +33,7 @@ if (isBrowser) {
   jQuery(function(){    
     $('.nav-link').on('click', function(event){
       event.preventDefault();
+      $('#nav-bar').removeClass('toggled');
       var destination = $(this).attr('href').substring(1);
       $('html, body').animate({
         scrollTop: $(destination).offset().top - 16*3 -1

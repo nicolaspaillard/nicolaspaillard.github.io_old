@@ -55,25 +55,25 @@ h1::after{
 }
 
 /* ez spacings */
-.mt1{
+.margin-top-1{
 	margin-top: 1em;
 }
-.mb0{
+.margin-bottom-0{
 	margin-bottom: 0;
 }
-.pl2{
+.padding-left-2{
 	padding-left: 2em;
 }
 @media screen and (max-width: 1250px) {
-	.mtql1{
-		margin-top: 1em;
+	.margin-top-1-query-large{
+		margin-top: 1em !important;
 	}
 }
 @media screen and (max-width: 700px) {
-	.mtq05{
-		margin-top: 0.5em;
+	.margin-top-05-query-small{
+		margin-top: 0.5em !important;
 	}
-	.mtqs1{
-		margin-top: 1em;
+	.margin-top-1-query-small{
+		margin-top: 1em !important;
 	}
 }

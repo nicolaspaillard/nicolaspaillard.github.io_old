@@ -27,15 +27,13 @@
     align-items: center;
     padding: 0.5em;
 }
-
-#nav-toggle svg, .nav-link svg{
+#nav-toggle svg path, .nav-link svg path{
     color: var(--cyan);
 }
 .nav-link:hover{
     background-color: rgba(255,255,255,0.2);
     border-radius: 0.3em;
 }
-
 
 /* Responsive positionning */
 @media screen and (max-width: 700px){

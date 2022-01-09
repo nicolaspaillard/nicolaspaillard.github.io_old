@@ -3,14 +3,16 @@
     justify-content: center;
 	align-items: center;
 	width: 100%;
-	overflow: hidden;
+}
+.force-row{
+	flex-direction: row !important;
 }
 @media screen and (max-width: 1250px){
 	.container-flex.main{
 		flex-direction: column;
 	}
 	.container-flex.main > *{
-		width: 100% !important;
+		width: 100%;
 	}
 }
 @media screen and (max-width: 700px){

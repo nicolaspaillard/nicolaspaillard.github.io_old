@@ -35,7 +35,7 @@ export default function Skills() {
                   <SkillsList skills={backend}/>
                 </ContainerSplit>
                 <ContainerSplit width={50}>
-                  <h2 class='mtqs1'>Frontend</h2>
+                  <h2 class='margin-top-1-query-small'>Frontend</h2>
                   <SkillsList skills={frontend}/>
                 </ContainerSplit>
               </div>

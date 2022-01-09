@@ -26,7 +26,7 @@ export default function Experience() {
                   <TimeLine events={formations} />
                 </ContainerSplit>
                 <ContainerSplit width={50}>
-                  <h2>Emplois</h2>
+                  <h2 class='margin-top-1-query-small'>Emplois</h2>
                   <TimeLine events={emplois} />
                 </ContainerSplit>
               </ContainerFlex>
