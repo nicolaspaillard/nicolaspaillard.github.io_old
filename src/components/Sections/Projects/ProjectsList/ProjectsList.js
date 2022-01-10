@@ -2,6 +2,7 @@ import * as React from 'react'
 import './ProjectsList.css'
 import { Link } from 'gatsby'
 import Container from '../../../Container/Container'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function ProjectsList(props) {
   const containersList = props.projects.map((group) => {return (
@@ -14,7 +15,7 @@ export default function ProjectsList(props) {
                 <Link to={project.url} class='project-link'>
                   <h2 class='project-name'>{project.name}</h2>     
                 </Link>
-                <img class='project-img' src={project.image} />
+                <LazyLoadImage class='project-img' src={project.image} />
                 <p class='project-text'><i>{project.text}</i></p>
               </div>
             </Container>
