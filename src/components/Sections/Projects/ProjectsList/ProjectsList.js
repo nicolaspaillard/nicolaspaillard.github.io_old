@@ -1,16 +1,32 @@
 import * as React from 'react'
-import ProjectCard from './ProjectCard/ProjectCard';
-import ContainerFlex from '../../../Containers/ContainerFlex/ContainerFlex';
+import './ProjectsList.css'
+import { Link } from 'gatsby'
+import Container from '../../../Container/Container'
 
 export default function ProjectsList(props) {
-    var projects = props.projects;
-    const projectsList = projects.map((project) =>
-        <ProjectCard name={project.name} href={project.url} image={project.image} text={project.text} />
-    );
+  const containersList = props.projects.map((group) => {return (
+    <Container flex class={'main'}>{
+      group.map((subgroup) => { return (
+        <Container split><Container flex>{
+          subgroup.map((project) => {return (
+            <Container split class={'mb1'} width={50}>
+              <div class='project-card'>
+                <Link to={project.url} class='project-link'>
+                  <h2 class='project-name'>{project.name}</h2>     
+                </Link>
+                <img class='project-img' src={project.image} />
+                <p class='project-text'><i>{project.text}</i></p>
+              </div>
+            </Container>
+          )})
+        }</Container></Container>
+      )})
+    }</Container>
+  )});
+  
   return (
-    <ContainerFlex>
-      <div class='projects-container'>{projectsList}</div> 
-    </ContainerFlex>
-    
+    <Container flex class={'main col'}>
+      {containersList}    
+    </Container>
   );
-}
+};

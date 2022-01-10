@@ -1,5 +1,5 @@
 import * as React from 'react'
-import * as $ from 'jquery'
+import $ from 'jquery'
 import jQuery from 'jquery'
 import { Link } from 'gatsby'
 import './NavBar.css'

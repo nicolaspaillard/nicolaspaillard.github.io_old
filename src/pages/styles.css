@@ -17,20 +17,22 @@ html, body{
     background-color: var(--black);
 	margin: 0;
 }
-*{
-	color: var(--white) !important;
-    text-decoration: none;
-	font-family: 'Roboto Thin',"Helvetica Neue",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-}
-p{
-	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+
 section{
 	padding: 1em;
 }
 .container{
 	width: 60%;
 	margin: 0 auto;	
+	/* debug 
+	border-left: 1px solid red;
+	border-right: 1px solid red;
+	*/
+}
+@media screen and (max-width: 1250px){
+	.container {
+		width: 70%;
+	}
 }
 @media screen and (max-width: 700px){
 	.container {
@@ -39,6 +41,14 @@ section{
 }
 
 /* Text formatting */
+*{
+	color: var(--white) !important;
+    text-decoration: none;
+	font-family: 'Roboto Thin',"Helvetica Neue",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+p{
+	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 h1,h2,h3,h4{
     margin: 0;
 }
@@ -58,28 +68,34 @@ h1::after{
 }
 
 /* ez spacings */
-.margin-top-1{
+.mt1{
 	margin-top: 1em;
 }
-.margin-left-1{
+.ml1{
 	margin-left: 1em;
 }
-.margin-bottom-0{
+.mb0{
 	margin-bottom: 0;
 }
-.padding-left-2{
+.mb1{
+	margin-bottom: 1em;
+}
+.pl2-no-query{
 	padding-left: 2em;
 }
 @media screen and (max-width: 1250px) {
-	.margin-top-1-query-large{
-		margin-top: 1em !important;
+	.mt1-query-large{
+		margin-top: 1em;
+	}
+	.pl2-no-query{
+		padding-left: 0;
 	}
 }
 @media screen and (max-width: 700px) {
-	.margin-top-05-query-small{
-		margin-top: 0.5em !important;
+	.mt05-query-small{
+		margin-top: 0.5em;
 	}
-	.margin-top-1-query-small{
-		margin-top: 1em !important;
+	.mt1-query-small{
+		margin-top: 1em;
 	}
 }

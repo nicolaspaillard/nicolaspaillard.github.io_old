@@ -1,7 +1,6 @@
 import * as React from 'react'
 import SkillsList from './SkillsList/SkillsList';
-import ContainerSplit from '../../Containers/ContainerSplit/ContainerSplit'
-import ContainerFlex from '../../Containers/ContainerFlex/ContainerFlex';
+import Container from '../../Container/Container'
 
 export default function Skills() {
 
@@ -24,23 +23,23 @@ export default function Skills() {
     <section id='skills'>
       <div class='container'>
         <h1>Compétences</h1><br/><br/>
-          <ContainerFlex class={'main'}>
-            <ContainerSplit width={20}>
+          <Container flex class={'main'}>
+            <Container split width={20}>
               <p>lorem ipsum dolor sit amet</p>
-            </ContainerSplit>
-            <ContainerSplit width={80}>
+            </Container>
+            <Container split width={80}>
               <div class='container-flex'>
-                <ContainerSplit width={50}>
+                <Container split width={50}>
                   <h2>Backend</h2>
                   <SkillsList skills={backend}/>
-                </ContainerSplit>
-                <ContainerSplit width={50}>
-                  <h2 class='margin-top-1-query-small'>Frontend</h2>
+                </Container>
+                <Container split width={50}>
+                  <h2 class='mt1-query-small'>Frontend</h2>
                   <SkillsList skills={frontend}/>
-                </ContainerSplit>
+                </Container>
               </div>
-            </ContainerSplit>
-          </ContainerFlex>
+            </Container>
+          </Container>
       </div>    
     </section>
   );

@@ -1,6 +1,5 @@
 import * as React from 'react'
-import ContainerSplit from '../../Containers/ContainerSplit/ContainerSplit';
-import ContainerFlex from '../../Containers/ContainerFlex/ContainerFlex';
+import Container from '../../Container/Container';
 import TimeLine from './TimeLine/TimeLine';
 export default function Experience() {
   var formations = 
@@ -12,29 +11,29 @@ export default function Experience() {
   ];
   var emplois = 
   [
-    {title:'2022', content:'Consultant C#'},
+    {title:'2022', content:'Consultant C# 🤞'},
   ];
   return (
     <section id='experience'>
       <div class='container'>
         <h1>Expériences</h1><br/><br/>
-          <ContainerFlex class={'main'}>
-            <ContainerSplit width={80}>
-              <ContainerFlex>
-                <ContainerSplit width={50}>
-                  <h2>Formations</h2>
-                  <TimeLine events={formations} />
-                </ContainerSplit>
-                <ContainerSplit width={50}>
-                  <h2 class='margin-top-1-query-small'>Emplois</h2>
-                  <TimeLine events={emplois} />
-                </ContainerSplit>
-              </ContainerFlex>
-            </ContainerSplit>
-            <ContainerSplit width={20}>
-              <p>lorem ipsum dolor sit amet</p>
-              </ContainerSplit>
-          </ContainerFlex>   
+        <Container flex class={'main'}>
+          <Container split width={80}>
+            <Container flex>
+              <Container split width={50}>
+                <h2>Formations</h2>
+                <TimeLine events={formations} />
+              </Container>
+              <Container split width={50}>
+                <h2 class='mt1-query-small'>Emplois</h2>
+                <TimeLine events={emplois} />
+              </Container>
+            </Container>
+          </Container>
+          <Container split width={20}>
+            <p>lorem ipsum dolor sit amet</p>
+            </Container>
+        </Container>   
       </div>    
     </section>
   );

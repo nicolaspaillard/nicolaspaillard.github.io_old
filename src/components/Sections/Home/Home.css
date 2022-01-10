@@ -15,12 +15,11 @@
 }
 #me > *{
     display: inline-block;
-    font-weight: normal;
 }
 #me h1::after{
     content: none;
 }
-#me h4 i span span:first-child{
+.typed-strings span:nth-child(1){
     color:var(--cyan) !important;
     border-bottom: 2px solid var(--cyan);
 }

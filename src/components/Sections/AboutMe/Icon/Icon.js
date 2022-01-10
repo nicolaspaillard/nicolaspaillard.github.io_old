@@ -9,13 +9,13 @@ export default function Icon(props) {
             icon =  
                 <div class='icon-box link' style={{'cursor' : 'pointer', 'color':'var(--cyan)'}} onClick={event => window.location.href=props.href}>
                     <a class='icon-background'><FontAwesomeIcon icon={props.icon} /></a>                    
-                    <a class='icon-text margin-left-1'>{props.text}</a>
+                    <a class='icon-text ml1'>{props.text}</a>
                 </div>
         }else{
             icon = 
                 <div class='icon-box'>
                     <a class='icon-background'><FontAwesomeIcon icon={props.icon} /></a>                    
-                    <a class='icon-text margin-left-1'>{props.text}</a>
+                    <a class='icon-text ml1'>{props.text}</a>
                 </div>
         }
     }else{
