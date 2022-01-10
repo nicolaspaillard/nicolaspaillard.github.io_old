@@ -1,5 +1,5 @@
 import * as React from 'react'
-import avatar from '../../../images/profile.jpg'
+import avatar from 'https://nicolaspaillard.mo.cloudinary.net/PhbKLYv/profile.jpg'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faBirthdayCake, faCar, faEnvelope, faGraduationCap, faMapMarker, faSearch,  } from '@fortawesome/fontawesome-free-solid';
 import Icon from './Icon/Icon';

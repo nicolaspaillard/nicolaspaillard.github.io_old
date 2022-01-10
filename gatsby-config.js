@@ -13,7 +13,8 @@ module.exports = {
         background_color: '#f7f0eb',
         theme_color: '#a2466c',
         display: 'standalone',
-        icon: 'src/images/icon.png',      },
+        icon: 'https://nicolaspaillard.mo.cloudinary.net/4g6NH8C/icon.png',      
+      },
     }
    // other plugins goes here
   ],

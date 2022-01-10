@@ -1,7 +1,7 @@
 import * as React from 'react'
 import ProjectsList from './ProjectsList/ProjectsList';
-import previousSite from '../../../images/Projects/previousSite.png'
-import highSchool from '../../../images/Projects/highSchool.png'
+import previousSite from 'https://nicolaspaillard.mo.cloudinary.net/7kJY0BQ/previous-Site.png'
+import highSchool from 'https://nicolaspaillard.mo.cloudinary.net/B6gJ3g6/high-School.png'
 
 export default function Projects() {
   var projects = [
