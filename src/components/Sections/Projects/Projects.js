@@ -4,7 +4,7 @@ import ProjectsList from './ProjectsList/ProjectsList';
 export default function Projects() {
   var projects = [
     {name:'Nicolas Paillard', url:'https://nicolas-p.000webhostapp.com', image:'https://nicolaspaillard.mo.cloudinary.net/7kJY0BQ/previous-Site.png', text:'Mon ancien portfolio. Développé en HTML/CSS/JS avec Bootstrap'},
-    {name:'High-School', url:'https://github.com/nicolaspaillard/High-School', image:'https://nicolaspaillard.mo.cloudinary.net/B6gJ3g6/high-School.png', text:'Un portail WEB de gestion d\'établissement scolaire. Développé en ASP.NET Core MVC et s\'appuyant sur un serveur Azure Active Directory et Entity Framework pour gérer la base de données'},
+    {name:'High-School', url:'https://github.com/nicolaspaillard/High-School', image:'https://nicolaspaillard.mo.cloudinary.net/z6cXPQv/high-School.png', text:'Un portail WEB de gestion d\'établissement scolaire. Développé en ASP.NET Core MVC et s\'appuyant sur un serveur Azure Active Directory et Entity Framework pour gérer la base de données'},
   ]   
 
   // splits projects array in sub 2 items arrrays for responsive display
