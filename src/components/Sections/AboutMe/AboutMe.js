@@ -1,5 +1,4 @@
 import * as React from 'react'
-import avatar from 'https://nicolaspaillard.mo.cloudinary.net/PhbKLYv/profile.jpg'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faBirthdayCake, faCar, faEnvelope, faGraduationCap, faMapMarker, faSearch,  } from '@fortawesome/fontawesome-free-solid';
 import Icon from './Icon/Icon';
@@ -12,7 +11,7 @@ export default function AboutMe() {
         <h1>À propos</h1><br/><br/>
         <Container flex class={'main center'}>
           <Container split width={30}>
-            <img id='avatar' src={avatar} style={{'border-radius':'50%','height':'auto','width':'100%'}} />
+            <img id='avatar' src={'https://nicolaspaillard.mo.cloudinary.net/PhbKLYv/profile.jpg'} style={{'border-radius':'50%','height':'auto','width':'100%'}} />
             <Container flex class='mt1 row center'>
               <Icon icon={faLinkedin}  href={'https://www.linkedin.com/in/nicolas--p/'}/>
               &nbsp;&nbsp;&nbsp;&nbsp;
