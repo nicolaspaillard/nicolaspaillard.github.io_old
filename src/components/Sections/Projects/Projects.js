@@ -1,5 +1,5 @@
-import React, { lazy } from 'react'
-const ProjectsList = lazy(() => import('./ProjectsList/ProjectsList'));
+import * as React from 'react'
+import ProjectsList from './ProjectsList/ProjectsList';
 
 export default function Projects() {
   var projects = [

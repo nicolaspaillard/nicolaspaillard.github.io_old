@@ -1,15 +1,14 @@
 // Step 1: Imports
-import React, { lazy } from 'react'
+import * as React from 'react'
 // Global styles
 import './styles.css'
 // Components
-
-const NavBar = lazy(() => import('../components/NavBar/NavBar'));
-const Home = lazy(() => import('../components/Sections/Home/Home'));
-const AboutMe = lazy(() => import('../components/Sections/AboutMe/AboutMe'));
-const Skills = lazy(() => import('../components/Sections/Skills/Skills'));
-const Experience = lazy(() => import('../components/Sections/Experience/Experience'));
-const Projects = lazy(() => import('../components/Sections/Projects/Projects'));
+import NavBar from '../components/NavBar/NavBar'
+import Home from '../components/Sections/Home/Home'
+import AboutMe from '../components/Sections/AboutMe/AboutMe'
+import Skills from '../components/Sections/Skills/Skills'
+import Experience from '../components/Sections/Experience/Experience'
+import Projects from '../components/Sections/Projects/Projects'
 
 import { faBriefcase, faAddressCard, faBuilding, faFileCode } from '@fortawesome/fontawesome-free-solid';
 

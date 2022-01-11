@@ -1,8 +1,8 @@
-import React, { lazy } from 'react'
-const Container = lazy(() => import('../../Container/Container'));
+import * as React from 'react'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faBirthdayCake, faCar, faEnvelope, faGraduationCap, faMapMarker, faSearch,  } from '@fortawesome/fontawesome-free-solid';
 import Icon from './Icon/Icon';
+import Container from '../../Container/Container'
 
 export default function AboutMe() {
   return (

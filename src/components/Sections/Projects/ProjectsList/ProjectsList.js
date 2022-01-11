@@ -1,7 +1,7 @@
-import React, { lazy } from 'react'
-const Container = lazy(() => import('../../../Container/Container'));
+import * as React from 'react'
 import './ProjectsList.css'
 import { Link } from 'gatsby'
+import Container from '../../../Container/Container'
 
 export default function ProjectsList(props) {
   const containersList = props.projects.map((group) => {return (
