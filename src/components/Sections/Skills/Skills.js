@@ -1,6 +1,6 @@
-import * as React from 'react'
-import SkillsList from './SkillsList/SkillsList';
-import Container from '../../Container/Container'
+import React, { lazy } from 'react'
+const Container = lazy(() => import('../../Container/Container'));
+const SkillsList = lazy(() => import('./SkillsList/SkillsList'));
 
 export default function Skills() {
 

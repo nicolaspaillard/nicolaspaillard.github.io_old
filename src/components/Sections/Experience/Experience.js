@@ -1,6 +1,7 @@
-import * as React from 'react'
-import Container from '../../Container/Container';
-import TimeLine from './TimeLine/TimeLine';
+import React, { lazy } from 'react'
+const Container = lazy(() => import('../../Container/Container'));
+const TimeLine = lazy(() => import('./TimeLine/TimeLine'));
+
 export default function Experience() {
   var formations = 
   [
