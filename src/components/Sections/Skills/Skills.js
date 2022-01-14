@@ -25,7 +25,7 @@ export default function Skills() {
         <h1>Compétences</h1><br/><br/>
           <Container flex class={'main'}>
             <Container split width={20}>
-              <p>lorem ipsum dolor sit amet</p>
+              <p></p>
             </Container>
             <Container split width={80}>
               <div class='container-flex'>
