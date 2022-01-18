@@ -6,6 +6,7 @@ export default function Skills() {
 
   var backend = [
     {name:'C#.NET', level:'90'},
+    {name:'Unit Testing/TDD (MSTest/XUnit)', level:'70'},
     {name:'Java', level:'70'},
     {name:'SQL', level:'60'},
     {name:'C++/C', level:'60'},
@@ -25,7 +26,11 @@ export default function Skills() {
         <h1>Compétences</h1><br/><br/>
           <Container flex class={'main'}>
             <Container split width={20}>
-              <p></p>
+              <p>
+              <br/>
+                Anglais : opérationnel<br/><br/>
+                Espagnol : niveau moyen<br/><br/>
+              </p>
             </Container>
             <Container split width={80}>
               <div class='container-flex'>
