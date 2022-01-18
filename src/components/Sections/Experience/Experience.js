@@ -32,7 +32,13 @@ export default function Experience() {
             </Container>
           </Container>
           <Container split width={20}>
-            <p></p>
+            <h2>Centres d'intérêt :</h2>
+              <br/>
+              <p>
+                Entretien d'un système de sonorisation et organisation d'évènements privés<br/><br/>
+                Randonnée, activités et sports de plein air<br/><br/>
+                Voyages (dernier en date : 5 jours de kayak et bivouacs dans les fjords d'Oman suivis d'une visite de dubai)<br/><br/>
+              </p>
             </Container>
         </Container>   
       </div>    

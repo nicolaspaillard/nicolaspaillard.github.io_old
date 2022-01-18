@@ -24,27 +24,27 @@ export default function Skills() {
     <section id='skills'>
       <div class='container'>
         <h1>Compétences</h1><br/><br/>
-          <Container flex class={'main'}>
-            <Container split width={20}>
-              <p>
-              <br/>
-                Anglais : opérationnel<br/><br/>
-                Espagnol : niveau moyen<br/><br/>
-              </p>
-            </Container>
-            <Container split width={80}>
-              <div class='container-flex'>
-                <Container split width={50}>
-                  <h2>Backend</h2>
-                  <SkillsList skills={backend}/>
-                </Container>
-                <Container split width={50}>
-                  <h2 class='mt1-query-small'>Frontend</h2>
-                  <SkillsList skills={frontend}/>
-                </Container>
-              </div>
+        <Container flex class={'main'}>
+          <Container split width={20}>
+            <h2>Langues :</h2>
+            <p>
+              Anglais : opérationnel<br/><br/>
+              Espagnol : niveau moyen<br/><br/>
+            </p>
+          </Container>
+          <Container split width={80}>
+            <Container flex>
+              <Container split>
+                <h2>Backend</h2>
+                <SkillsList skills={backend}/>
+              </Container>
+              <Container split>
+                <h2 class='mt1-query-small'>Frontend</h2>
+                <SkillsList skills={frontend}/>
+              </Container>
             </Container>
           </Container>
+        </Container>
       </div>    
     </section>
   );
