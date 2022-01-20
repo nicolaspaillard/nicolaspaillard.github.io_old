@@ -27,12 +27,12 @@ export default function AboutMe() {
               avec option informatique et réseaux. Durant ces années je réalise mes premiers sites,
               l'un pour les études, l'autre pour le plaisir, faisant un premier pas vers la programmation.</p>
               <Container flex>
-                <Container split width={50}>
+                <Container split>
                   <Icon icon={faSearch} text={'Recherche CDI'} />
                   <Icon icon={faCar} text={'Mobile en Occitanie'} />            
                   <Icon icon={faGraduationCap} text={'BTS Systèmes Numériques'} />
                 </Container>
-                <Container split class='mt05-query-small' width={50}>
+                <Container split class='mt05-query-small'>
                   <Icon icon={faBirthdayCake} text={getAge('1997-05-11') + ' ans'} />
                   <Icon icon={faMapMarker} text={'Montpellier, France'} />
                   <Icon icon={faEnvelope} text={'Contacter par mail'} href={'mailto:paillard.nicolas.pro@gmail.com'} />

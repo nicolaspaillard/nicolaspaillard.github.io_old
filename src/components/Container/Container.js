@@ -6,10 +6,10 @@ export default function Container(props) {
     var classes = 'container-flex'+ (props.class ? ' '+props.class : '');
   }else if(props.split){
     var classes = 'container-split'+ (props.class ? ' '+props.class : '');
-    var width = props.width ? props.width : 50;
+    var width = props.width == "auto" ? props.width : props.width ? props.width+'%' : "50%";
   }  
   return (
-    <div class={classes} style={{width:width+'%'}}>
+    <div class={classes} style={{width:width}}>
         {props.children}
     </div>
   );

@@ -26,7 +26,7 @@ export default function Skills() {
         <h1>Compétences</h1><br/><br/>
         <Container flex class={'main'}>
           <Container split width={20}>
-            <h2>Langues :</h2>
+            <h2>Langues</h2>
             <p>
               Anglais : opérationnel<br/><br/>
               Espagnol : niveau moyen<br/><br/>
@@ -35,7 +35,7 @@ export default function Skills() {
           <Container split width={80}>
             <Container flex>
               <Container split>
-                <h2>Backend</h2>
+                <h2 class='mt1-query-small'>Backend</h2>
                 <SkillsList skills={backend}/>
               </Container>
               <Container split>
